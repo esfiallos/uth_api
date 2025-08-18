@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "description": "Api Con Informacion general de la Universidad Tecnologica de Honduras UTH",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev":   "nodemon index.js",
-    "test":  "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Emerson Stward Barrientos Fiallos",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
